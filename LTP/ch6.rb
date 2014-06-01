@@ -1,26 +1,18 @@
 bottles = 99
-while bottles = !0
-	puts bottles.to_s + " bottles of beer on the wall"
-	puts bottles.to_s + " bottles of beer"
-	bottles = bottles - 1
-	puts " take one down, pass it around"
-	if bottles == 1
-		puts bottles.to_s + " bottles of beer on the wall"
-		else
-			puts bottles.to_s + " bottles of beer on the wall"
-	end
 
-	puts ""
+bottles_now = bottles
 
-	if bottles == 1
-		puts bottles.to_s + " bottles of beer on the wall"
-		puts bottles.to_s + " bottles of beer"
-		bottles = bottles - 1
-		puts " take one down, pass it around"
-		puts bottles.to_s + " bottles of beer on the wall"
-		
-	end	
+while bottles_now > 2
+	puts bottles_now.to_s + " bottles of beer on the wall, " +
+	bottles_now.to_s + " bottles of beer"
+	bottles_now = bottles_now - 1
+	puts "Take one down, pass it around, " + bottles_now.to_s +
+	" bottles of beer on the wall"
 end
+puts "2 bottles of beer on the wall, 2 bottles of beer!" 
+puts "Take one down pass it around, 1 bottle of beer on the wall"
+puts "1 bottle of beer on the all, 1 bottle of beer!"
+puts "Take one down pass it around, no more bottles of beer on the wall"
 
 
 
